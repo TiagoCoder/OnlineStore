@@ -16,7 +16,7 @@ namespace OnlineStore.Data.Entities
 
 
         [DisplayFormat(DataFormatString = "{0:C2}", ApplyFormatInEditMode = false)]
-        public float Price { get; set; }
+        public decimal Price { get; set; }
 
 
         [Display(Name = "Last purchase")]

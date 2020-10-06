@@ -2,7 +2,7 @@
 
 namespace OnlineStore.Data.Entities
 {
-    public class OrderDetail : IEntity
+    public class TempOrderDetail : IEntity
     {
         public int Id { get; set; }
 

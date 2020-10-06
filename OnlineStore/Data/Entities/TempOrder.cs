@@ -6,9 +6,13 @@ using System.Linq;
 
 namespace OnlineStore.Data.Entities
 {
-    public class Order : IEntity
+    public class TempOrder : IEntity
     {
         public int Id { get; set; }
+
+
+        [Required]
+        public int AnonymousUserId { get; set; }
 
 
         [Required]
@@ -23,15 +27,7 @@ namespace OnlineStore.Data.Entities
         public DateTime? DeliveryDate { get; set; }
 
 
-
-        [Required]
-        public User User { get; set; }
-
-
-
-        public IEnumerable<OrderDetail> Items { get; set; }
-
-
+        public IEnumerable<TempOrderDetail> Items { get; set; }
 
 
         [DisplayFormat(DataFormatString = "{0:N2}")]
